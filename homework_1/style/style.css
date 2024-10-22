@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile, .experience, .education, .hobbies {
+    border-radius: 8px;
+    margin: 0 10px 10px 10px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Левая колонка */
+.left-column {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    height: 50%;
+    
+}
+
+.left-column .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+/* .left-column .contact-info {
+    text-align: left;
+} */
+
+.left-column .contact-info h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.left-column .contact-info h3 {
+    color: #ff5722;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Средняя колонка */
+.middle-column {
+    width: 40%;
+}
+
+.middle-column section {
+    margin-bottom: 20px;
+}
+
+.middle-column h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.middle-column h3 {
+    font-size: 1.2em;
+    color: #ff5722;
+    margin-bottom: 5px;
+}
+
+.middle-column p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.middle-column ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.middle-column ul li {
+    margin-bottom: 5px;
+}
+
+/* Правая колонка */
+.right-column {
+    width: 40%;
+}
+
+.right-column section {
+    margin-bottom: 20px;
+}
+
+.right-column h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.right-column h3 {
+    font-size: 1.2em;
+    color: #ff5722;
+    margin-bottom: 5px;
+}
+
+.right-column p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.right-column ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.right-column ul li {
+    margin-bottom: 5px;
+}
+

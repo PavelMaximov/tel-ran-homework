@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #404149;
+    padding: 50px 150px;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar>li>a {
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.navbar>li>a>i {
+    font-size: 25px;
+}
+
+.navbar>li>a:hover {
+    color: #19191b;
+}
+
+header {
+    background-image: url(../Lesson_4/img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    max-width: 1110px;
+}
+
+header .title_block {
+    padding-top: 192px;
+    color: #fff;
+    text-align: center;
+    padding: 192px 188px 20px 188px;
+}
+
+header .title_block h1 {
+    
+    font-family: Oswald;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 35px;
+    line-height: 1;
+}
+
+header .title_block h1::first-line {
+line-height: 95px;
+}
+
+
+header .title_block p {
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header .info_block {
+    background-color: white;
+    padding: 57px 130px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Oswald;
+    line-height: 1;
+}
+
+header .info_block>div>p:first-child{
+    font-size: 72px;
+    font-weight: 500;
+    color: #F7654A;
+    margin-bottom: 25px;
+    
+}
+
+header .info_block>div>p:nth-child(2){
+    font-size: 36px;
+    font-weight: 5000;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+
+header .info_block>div>p:last-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: #999;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.about .about_block h2 {
+font-family: Oswald;
+font-size: 36px;
+font-weight: 500;
+text-align: center;
+color: #000;
+margin-bottom: 66px;
+}
+
+.about .services {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.about .services>div {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 58px 50px;
+    cursor: pointer;
+}
+
+.about .services>div p {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: Oswald;
+}
+
+.about .services>div i {
+    font-size: 48px;
+    color: #F7654A;
+    padding-bottom: 30px;
+}
+
+.about .services>div:hover i{
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    
+    
+    
+}
+
+.our_projects  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.our_projects .projects_block h2 {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    margin-bottom: 60px;
+    }
+
+.projects_block .projects {
+    
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.projects_block .projects .line {
+    height: 6px;
+    width: 55px;
+    background-color: #F7654A;
+    margin-top: 45px;
+}
+
+.projects_block .projects h4 {
+font-family: Oswald;
+font-size: 24px;
+font-weight: 500;
+text-align: left;
+margin-top: 15px;
+color: #404149;
+}
+
+.projects_block .projects p {
+margin-top: 20px;
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+color: #999999;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 112px;
+}
+
+.contacts .contacts_block h2 {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+}
+
+.contacts_block .contacts_info {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+
+}
+
+.contacts_block .contacts_info>div {
+    
+    text-align: center;
+}
+
+.contacts_block .contacts_info>div i {
+    font-size: 48px;
+    color: #F7654A;
+    margin-top: 60px;
+    
+}
+
+.contacts_block .contacts_info>div h4 {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 500;
+    color: #999999;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.contacts_block .contacts_info>div p{ 
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    line-height: 35px;
+    }
+
+.contacts_block .contacts_info > div:last-child p { 
+    color: #F7654A; 
+        }
+
+footer{
+    margin-top: 60px;
+    background-color: #404149;
+    height: 82px;
+}

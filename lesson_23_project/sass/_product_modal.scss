@@ -1,0 +1,173 @@
+@use "variables" as vars;
+
+.modal-window {
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+   
+  .product-modal {
+    background-color: vars.$primary-color;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+   
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px solid rgb(106, 106, 106);
+   
+      .close-modal {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+      }
+      .close-modal:hover {
+        color: rgb(243, 94, 94);
+      }
+    }
+   
+    .modal-content {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+   
+      .product-gallery {
+        flex: 1;
+        position: relative;
+        padding-right: 18px;
+   
+        .gallery-main {
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+          position: relative;
+          border-radius: 8px;
+          margin-bottom: 0.5rem;
+          
+          
+          
+   
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: white;
+            transition: transform 0.3s ease;
+            
+          }
+        }
+   
+        .gallery-thumbs {
+          display: flex;
+          gap: 0.5rem;
+          overflow-x: auto;
+          padding-bottom: 0.5rem;
+
+   
+          .gallery-thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            background-color: rgba(255, 255, 255, 0.473);
+   
+            &.active {
+              opacity: 1;
+              border: 2px solid green;
+            }
+   
+            &:not(.active) {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+   
+      .product-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+   
+        .modal-product-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+   
+        .modal-product-price {
+          font-size: 1.75rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          color: green;
+        }
+   
+        .product-description {
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+          color: white;
+        }
+
+        .modal-addToCart {
+            margin-top: 19%;
+            font-size: 22px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: vars.$additional-color;
+            border-radius: 8px;
+            border: none;
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+
+            &:hover {
+                background-color: vars.$accent-color;
+                color: vars.$secondary-color;
+              }
+      
+              &.exist {
+                background-color: vars.$accent-color;
+                color: vars.$secondary-color;
+              }
+        
+        }
+
+        .cart-message {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+        
+        .cart-message.show {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }

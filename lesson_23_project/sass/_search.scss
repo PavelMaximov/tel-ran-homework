@@ -1,0 +1,13 @@
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    .search-box{
+        width: 100%;
+        max-width: 600px;
+        border-radius: 25px;
+        border: none;
+        padding: 12px 24px;
+    }
+}
